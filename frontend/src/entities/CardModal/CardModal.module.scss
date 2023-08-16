@@ -1,0 +1,49 @@
+.form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.input {
+  flex: 0.85;
+}
+
+.submit {
+  flex: 0.1;
+}
+
+.group {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+
+  &__image {
+    flex: 0.8;
+    max-width: 75%;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    flex: 0.15;
+  }
+}
+
+.changeButton {
+  &:not(:first-child) {
+    margin-top: 15px;
+  }
+}
+
+:global {
+  .ant-modal-close {
+    color: #fff!important;
+    top: -25px!important;
+    right: -30px!important;
+    z-index: 10000!important;
+
+    .ant-modal-close-x {
+      font-size: 20px!important;
+    }
+  }
+}
